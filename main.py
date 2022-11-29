@@ -1,16 +1,25 @@
-# This is a sample Python script.
+FILENAME = "data.csv"
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+MENU = {
+    '1': 'Открыть файл',
+    '2': 'Добавить студента',
+    '3': 'Удалить студента',
+    '4': 'Найти студента по ФИО',
+    '5': 'Вывести студентов из группы',
+    '6': 'Перевод студентов',
+    '7': 'Вывести студентов старше 18',
+    '8': 'Вывести данные о студенте',
+    '9': 'Сохранить в файл',
+    '0': '<- Меню',
+    'exit': 'Выход'
+}
 
+for k, v in MENU.items():
+    print(k, '-', v)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+while True:
+    action = input('>_')
+    if action == '1':
+        pass
+    elif action == 'exit':
+        break
