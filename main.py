@@ -1,4 +1,4 @@
-from stud_csv import file_open, insert, show_rows
+from stud_csv import file_open, insert, show_rows, save
 
 FILENAME = "data.csv"
 
@@ -27,6 +27,8 @@ while True:
     elif action == '2':
         insert(input('Номер билета: '), input('ФИО: '), input('Пол: '), input('Возраст: '), input('Телефон: '),
                input('Почта: '), input('Группа: '), input('Курс: '))
+    elif action == '9':
+        save ()
     elif action =='10':
         show_rows()
     elif action == 'exit':

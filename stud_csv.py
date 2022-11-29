@@ -27,6 +27,14 @@ def insert(bilet, fio, gender, age, tel, email, group, course):
         return f"Ошибка при добавлении записи {e}"
     print("Данные добавлены")
 
+# Сохранить
+def save():
+    with open('data.csv', "w", encoding="utf-8", newline="") as file:
+        columns = ['номер билета', 'фио', 'пол', 'возраст', 'телефон', 'почта', 'группа','курс']
+        writer = csv.DictWriter(file, delimiter=";", fieldnames=columns)
+        writer.writeheader()
+        writer.writerows(csv_file)
+        print("Данные добавлены!")
 
 # Вывод всех записей
 def show_rows():
