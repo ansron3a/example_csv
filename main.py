@@ -1,4 +1,4 @@
-from stud_csv import file_open, insert, show_rows, save, drop_by_arg, find
+from stud_csv import file_open, insert, show_rows, save, drop_by_arg, find, find_group
 
 FILENAME = "data.csv"
 
@@ -31,6 +31,11 @@ while True:
         print(drop_by_arg (input("Значение: "),input("Колонка: ")))
     elif action == '4':
         find(input("Значение: "),input("Колонка: "))
+
+    elif action == '5':
+        find(input("Значение: "), input("Колонка: "))
+
+
     elif action == '9':
         save ()
     elif action =='10':

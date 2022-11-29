@@ -41,6 +41,11 @@ def find(val, col_name="фио"):
     print(*list(filter(lambda x: x[col_name] == val, csv_file)))
 
 
+#Поиск по группе
+def find_group(val, col_name="группа"):
+    print(*list(filter(lambda x: x[col_name] == val, csv_file)))
+
+
 # Сохранить
 def save():
     with open('data.csv', "w", encoding="utf-8", newline="") as file:
