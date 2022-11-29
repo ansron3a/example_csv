@@ -50,6 +50,7 @@ def save():
         writer.writerows(csv_file)
         print("Данные добавлены!")
 
+
 # Вывод всех записей
 def show_rows():
     if len(csv_file) > 0:
